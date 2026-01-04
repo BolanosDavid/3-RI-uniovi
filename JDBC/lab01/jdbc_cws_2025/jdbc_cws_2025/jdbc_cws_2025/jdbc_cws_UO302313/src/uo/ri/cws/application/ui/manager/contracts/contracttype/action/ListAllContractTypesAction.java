@@ -1,0 +1,29 @@
+package uo.ri.cws.application.ui.manager.contracts.contracttype.action;
+
+import java.util.List;
+
+import uo.ri.conf.Factories;
+import uo.ri.cws.application.service.contracttype.ContractTypeCrudService.ContractTypeDto;
+import uo.ri.cws.application.ui.util.Printer;
+import uo.ri.util.console.Console;
+import uo.ri.util.menu.Action;
+
+public class ListAllContractTypesAction implements Action {
+
+    @Override
+    public void execute() throws Exception {
+
+        List<ContractTypeDto> types =
+            Factories.service.forContractTypeCrudService()
+                .findAll();
+        if (types.isEmpty()) {
+            Console.println("No contract types found");
+            return;
+        }
+
+        for (ContractTypeDto dto : types) {
+            Printer.printContractType(dto);
+        }
+    }
+
+}

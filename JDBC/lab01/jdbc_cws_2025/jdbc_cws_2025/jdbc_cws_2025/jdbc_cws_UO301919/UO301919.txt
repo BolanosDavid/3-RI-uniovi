@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------------
+REPOSITORIOS DE INFORMACIÓN - CARWORKSHOP - ENTREGA JDBC
+--------------------------------------------------------------------------------
+DATOS PERSONALES----------------------------------------------------------------
+
+	Nombre: Ángela Nistal Guerrero
+	DNI: 71710574R
+
+CASOS DE USO--------------------------------------------------------------------
+
+	301919%3=2 -> Caso de uso 2:
+		– Gestión de nóminas
+		– Gestión de tipos de grupos profesionales
+		– Gestión de mecánicos ampliado
+
+COMENTARIOS---------------------------------------------------------------------
+	
+	En algunos puntos se ha optado por implementar validaciones directamente en los comandos
+        o transaction scripts, debido a restricciones en las interfaces proporcionadas. Estas 
+        decisiones se han tomado respetando la separación de responsabilidades y manteniendo la 
+        claridad del código.
+	
+--------------------------------------------------------------------------------

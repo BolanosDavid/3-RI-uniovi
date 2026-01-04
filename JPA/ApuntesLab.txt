@@ -1,0 +1,25 @@
+Clases atributos naturales
+Clases atributos accidentales
+Identidad natural
+Constructores -> siempre llevan la identidad, estarán encadenados(un full constructor del que se herederá). Comprobar atributos
+redefinir hashcode y equals 
+toString nunca con colecciones
+generar Getter para todos y setter solo en peligro de muerte(Siempre almacenan copias) 
+
+
+greenfield -> desarrollo <- resetear + generar
+legacy -> producciónn <- 
+clase para ser mappeada:
+constructor sin parametros
+anotación @Entity(@MapedSupperclass <- si hereda), @Embedable, @Id
+colecciones siempre con interfaces(List, Set)
+
+@Embedable <- incrustable
+@Column <- para que sea unica, tiene atributo name si quisieramos cambiar su nombre a la base de datos
+Embedded <- para especificar que viene de un embedable
+Transient <- ignorar el atributo
+Table <- usaremos el atributo name para el nombre de la tabla, columna...
+Enumerated <- al atributo enumerado. atributo enumType( se usa enumType.String)
+ManyToOne
+OneToMany <- Atributo mappedBy = "client" <- creara un atributo client_? siendo ? la clave primaria de client
+ManyToOne 

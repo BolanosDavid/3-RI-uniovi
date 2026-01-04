@@ -1,0 +1,6 @@
+Nombre: David Fernando Bolaños López
+Dni : 04249829G
+Casos de uso: 
+	- Gestión de nóminas
+	- Gestión de tipos de contrato
+	- Gestión de mecánicos ampliado
